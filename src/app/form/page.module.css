@@ -18,8 +18,39 @@
 
 .main {
   width: 80%;
-  height: 93vh;
+  height: 70vh;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.form {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   justify-content: center;
 }
 
+.form :last-child{
+  grid-column: span 2;
+}
+
+.divInput{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.divInput input {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+  margin-top: 2px;
+  padding-left: 10px;
+}
