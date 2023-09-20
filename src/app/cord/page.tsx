@@ -13,7 +13,7 @@ const HomePage = () => (
     </header>
     <main className={styles.main}>
       <h1>Coordenadas</h1>
-      <form>
+      <form className={styles.form}>
         <div className={styles.divInput}>
           <label htmlFor="logitude">Longitude</label>
           <input
@@ -33,14 +33,9 @@ const HomePage = () => (
           />
         </div>
 
-        <Image src="/map.svg" alt="" width={600} height={600} />
+        <Image src="/cord.svg" alt="" width={550} height={400} />
 
-        <Button
-          type="primary"
-          href="/cord"
-          danger
-          className={styles.botaoMapeamento}
-        >
+        <Button type="primary" href="/map" danger>
           Realizar Mapeamento
         </Button>
       </form>

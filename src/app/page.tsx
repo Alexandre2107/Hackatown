@@ -7,7 +7,7 @@ const HomePage = () => (
   <div className={styles.container}>
     <header className={styles.header}>
       <div>Team Maia</div>
-      <Button type="primary" href="cord/">
+      <Button type="primary" href="form/">
         Faça o Teste
       </Button>
     </header>

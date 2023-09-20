@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Checkbox } from "antd";
-import type { CheckboxChangeEvent } from "antd/es/checkbox";
 import styles from "./page.module.css";
 
 const HomePage = () => (
@@ -90,7 +89,7 @@ const HomePage = () => (
           <input type="text" placeholder="30" name="areaGrama" id="areaGrama" />
         </div>
 
-        <Button type="primary" href="/result">
+        <Button type="primary" href="/cord">
           Submit
         </Button>
       </form>
