@@ -1,95 +1,38 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import React from "react";
+import { Button } from "antd";
+import styles from "./page.module.css";
+import Image from "next/image";
 
-export default function Home() {
-  return (
+const HomePage = () => (
+  <div className={styles.container}>
+    <header className={styles.header}>
+      <div>Team Maia</div>
+      <Button type="primary" href="form/">
+        Faça o Teste
+      </Button>
+    </header>
     <main className={styles.main}>
-      <div className={styles.description}>
+      <div className={styles.mainInfo}>
+        <h1>
+          Melhorar processo de validação do índice de sustentabilidade
+          utilizando IA
+        </h1>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          Melhora de processo de checagem de credito de carbono utilizando
+          inteligência artificial
         </p>
+        <p>Teste Rápido e Eficiente</p>
+        <p>Resultado imediato</p>
+      </div>
+      <div className={styles.mainImg}>
+        <Image src="/img1.svg" alt="Vercel Logo" width={400} height={270} />
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <Image src="/img2.svg" alt="Vercel Logo" width={195} height={195} />
+          <Image src="/img3.svg" alt="Vercel Logo" width={195} height={195} />
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
-  )
-}
+  </div>
+);
+
+export default HomePage;

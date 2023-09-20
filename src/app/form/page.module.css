@@ -20,26 +20,6 @@
   width: 80%;
   height: 93vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
 
-.mainInfo{
-  max-width: 45%;
-  height: 35%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.mainImg {
-  max-width: 45%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.mainImg div{
-  display: flex;
-  justify-content: space-between;
-}
